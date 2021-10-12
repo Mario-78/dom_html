@@ -31,7 +31,16 @@
         <button>Pesquisar</button>
     </form>
     <script>
-        // ...
+        console.log(document.forms)
+        console.log(document.forms[0])
+        console.log(document.getElementsByTagName('peaquisa'))
+        console.log(document.pesquisa)
+        console.log(document.pesquisa.q)
+        document.pesquisa.q.value = 'Linux Brasil'
+            //Alterou o valor do campo de name 'q' do form
+        document.pesquisa.hl.value = "en-us"
+        console.log(document.pesquisa.hl.selectedIndex)
+            //seleciona o indice da tag select do form q está setada no monmento
     </script>
 </body>
 
